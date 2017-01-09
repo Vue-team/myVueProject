@@ -11,6 +11,7 @@ import myInfo from './components/myInfo.vue'
 import LogTime from './components/LogTime.vue'
 import NotFound from './components/404'
 import axios from 'axios'
+import Resource from 'Resource'
 import $ from 'jquery'
 import '../node_modules/light7/dist/css/light7.css'
 /*import '../node_modules/light7/dist/js/light7.js'*/
@@ -18,7 +19,7 @@ import '../mobile/mobile.js'
 
 /* eslint-disable no-new */
 Vue.use(VueRouter)
-Vue.use(axios)
+Vue.use(Resource)
 const routes = [{
   path : '/',
   component : Home
